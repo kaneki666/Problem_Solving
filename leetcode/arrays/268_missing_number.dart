@@ -13,7 +13,6 @@ class Solution {
     for (int i = 0; i < len; i++) {
       sum += nums[i];
     }
-
     return allSum - sum;
   }
 }

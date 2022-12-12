@@ -6,6 +6,5 @@ class Solution {
 
 void main() {
   Solution s = Solution();
-
   print(s.getConcatenation([1, 3, 5, 6]));
 }
