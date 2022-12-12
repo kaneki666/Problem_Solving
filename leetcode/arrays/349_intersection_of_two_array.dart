@@ -10,12 +10,11 @@ class Solution {
       } else {
         if (i < len1 && result[nums1[i]] == null) {
           result[nums1[i]] = false;
-        } else if (i > len1 - 1 && result[nums1[i]] != null) {
+        } else if (i > len1 && result[nums1[i]] != null) {
           result[nums1[i]] = true;
         }
       }
     }
-
     result.forEach((k, v) => v ? common.add(k) : null);
     return common;
   }
@@ -24,6 +23,9 @@ class Solution {
 void main() {
   Solution s = Solution();
   print(
-    s.intersection([1, 2, 2, 1], [2, 2]),
+    s.intersection(
+      [1, 2, 2, 1],
+      [2, 2],
+    ),
   );
 }
